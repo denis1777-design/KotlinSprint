@@ -1,15 +1,13 @@
 package org.example.Lesson_2
 
 fun main() {
-    var budgetMainWoker: Int
-    var budgetMainJob: Int
-    var middlePriceWorker: Int
+    val man: Byte = 50
+    var manPrice: Int = 30000
+    val stajor: Byte = 30
+    var stajorPrice: Int = 20000
+    var middlePriceWorker: Int = 0
 
-    budgetMainWoker = (50 * 30000).toInt()
-    budgetMainJob = ((30 * 20000) + budgetMainWoker).toInt()
-    middlePriceWorker = (budgetMainJob / (50 + 30)).toInt()
+    middlePriceWorker = (((stajor * stajorPrice) + (man * manPrice)) / (man + stajor)).toInt()
 
-    println(budgetMainWoker)
-    println(budgetMainJob)
     println(middlePriceWorker)
 }
