@@ -7,12 +7,12 @@ fun main() {
 
     println("---Взлет---")
     println("Год полета – $year")
-    println(hour)  // println - переносит
-    print(minute) //не переносит курсор на следущую строку
+    println("%02d".format(hour))
+    println("%02d".format(minute))
 
     hour = 10
     minute = 55
-    println()
+
     println("---Посадка---")
     println("$hour:$minute")
 }
