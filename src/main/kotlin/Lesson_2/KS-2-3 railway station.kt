@@ -13,4 +13,5 @@ fun main() {
     firstMinute = ((firstMinute + lastMinute) - 60).toByte()
 
     println("$firstHour:$firstMinute")
+
 }
