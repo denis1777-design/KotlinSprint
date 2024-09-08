@@ -2,11 +2,11 @@ package org.example.Lesson_3
 
 fun main() {
     val messageFromServer: String = "D2-D4;0"
-    val messagePart1: String = "D2-D4;0".substringBefore('-')
-    var messagePart2: String = "D2-D4;0".substringAfter('-')
-    val messagePart3: String = "D2-D4;0".substringAfterLast(";")
+    val messagePart1: String = messageFromServer.substringBefore('-')
+    var messagePart2: String = messageFromServer.split('-', ';').toString()
+    val messagePart3: String = messageFromServer.substringAfterLast(";")
 
-    messagePart2 = messagePart2.substringBefore(';')
+    messagePart2 = messagePart2[5].toString() + messagePart2[6].toString()
 
     println("$messagePart1")
     println("$messagePart2")
