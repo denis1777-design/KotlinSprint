@@ -1,12 +1,15 @@
 package org.example.Lesson_3
 
 fun main() {
-    val name: String = "Татьяна Сергеевна"
-    val untilMarry: String = "Андреева"
-    val getMarry: String = "Сидорова"
-    val untilAge: String = "20"
-    val age: String = "22"
+    val name: String = "Татьяна"
+    val lastName: String = "Сергеевна"
+    var surname: String = "Андреева"
+    var age: String = "20"
 
-    println("$untilMarry $name, $untilAge")
-    println("$getMarry $name, $age")
+    println("$surname $name $lastName,  $age")
+
+    surname = "Сидорова"
+    age = "22"
+
+    println("$surname $name $lastName,  $age")
 }
