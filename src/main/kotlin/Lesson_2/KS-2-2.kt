@@ -5,9 +5,8 @@ fun main() {
     var manPrice: Int = 30000
     val stajor: Byte = 30
     var stajorPrice: Int = 20000
-    var middlePriceWorker: Int = 0
 
-    middlePriceWorker = (((stajor * stajorPrice) + (man * manPrice)) / (man + stajor)).toInt()
+    var middlePriceWorker = (((stajor * stajorPrice) + (man * manPrice)) / (man + stajor))
 
     println(middlePriceWorker)
 }
